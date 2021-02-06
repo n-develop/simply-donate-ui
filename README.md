@@ -1,24 +1,5 @@
-# simply-donate-ui
+# UI for "Simply Donate"
 
-## Project setup
-```
-npm install
-```
+This will be the UI for [Simply Donate](https://github.com/n-develop/simply-donate).
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+It is Vue.js based and made by someone who has no real experience using Vue.js. So have fun. :-)
