@@ -3,6 +3,7 @@ import Router from "vue-router";
 import HowToDonate from "@/views/HowToDonate";
 import WhereToDonate from "@/views/WhereToDonate";
 import HomePage from "@/views/HomePage";
+import LoginPage from "@/views/LoginPage";
 
 Vue.use(Router);
 
@@ -23,5 +24,10 @@ export default new Router ({
             name: 'WhereToDonate',
             component: WhereToDonate,
         },
+        {
+            path: '/login',
+            name: 'Login',
+            component: LoginPage,
+        }
     ],
 })
