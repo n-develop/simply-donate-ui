@@ -26,8 +26,26 @@
       </div>
       <div class="navbar-end">
         <router-link :to="{ name: 'Account' }" active-class="is-primary" exact class="navbar-item">
-          Profil
         </router-link>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            <i class="fas fa-user"></i>
+          </a>
+
+          <div class="navbar-dropdown is-right">
+            <a v-if="!userLoggedIn" @click="loginUser" class="navbar-item">
+              Login
+            </a>
+            <hr v-if="!userLoggedIn" class="navbar-divider">
+            <a v-if="!userLoggedIn" @click="loginUser" class="navbar-item">
+              Register
+            </a>
+            <a v-else @click="logoutUser" class="navbar-item">
+              Logout
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </nav>
@@ -36,6 +54,11 @@
 <script>
 export default {
   name: 'Navigation',
+  computed: {
+    userLoggedIn() {
+      return this.$store.state.isLoggedIn;
+    },
+  },
   methods: {
     toggleNavbar() {
       const burger = document.getElementById('navbarBurger');
@@ -45,6 +68,15 @@ export default {
       burger.classList.toggle('is-active');
       $target.classList.toggle('is-active');
     },
+    loginUser() {
+      this.$store.commit('login')
+    },
+    registerUser() {
+      this.$store.commit('login')
+    },
+    logoutUser() {
+      this.$store.commit('logout')
+    }
   },
 };
 </script>
