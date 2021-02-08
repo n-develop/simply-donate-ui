@@ -4,6 +4,7 @@ import HowToDonate from "@/views/HowToDonate";
 import WhereToDonate from "@/views/WhereToDonate";
 import HomePage from "@/views/HomePage";
 import LoginPage from "@/views/LoginPage";
+import DonationsList from "@/views/DonationsList";
 
 Vue.use(Router);
 
@@ -13,6 +14,11 @@ export default new Router ({
             path: '/',
             name: 'Home',
             component: HomePage,
+        },
+        {
+            path: '/donations',
+            name: 'Donations',
+            component: DonationsList,
         },
         {
             path: '/how-to-donate',
