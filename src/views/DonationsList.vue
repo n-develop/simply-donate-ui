@@ -1,5 +1,5 @@
 <template>
-  <div id="donationsList" class="columns is-multiline">
+  <div id="donationsList" class="page columns is-multiline">
     <div class="column is-one-quarter" v-for="(donation, index) in donations" :key="index">
       <div class="card">
         <header class="card-header">
@@ -32,8 +32,5 @@ export default {
 </script>
 
 <style scoped>
-#donationsList {
-  padding: 20px;
-  background-color: #2B677E;
-}
+
 </style>

@@ -24,4 +24,8 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.page {
+  padding: 20px;
+  background-color: #2B677E;
+}
 </style>

@@ -23,6 +23,15 @@
         <router-link :to="{ name: 'WhereToDonate' }" active-class="is-primary" exact class="navbar-item">
           Wo kann ich spenden?
         </router-link>
+
+        <hr class="navbar-divider">
+
+        <router-link :to="{ name: 'Donations' }" active-class="is-primary" exact class="navbar-item">
+          Spenden anzeigen
+        </router-link>
+        <router-link :to="{ name: 'NonProfits' }" active-class="is-primary" exact class="navbar-item">
+          Organisationen anzeigen
+        </router-link>
       </div>
       <div class="navbar-end">
         <router-link :to="{ name: 'Account' }" active-class="is-primary" exact class="navbar-item">
@@ -34,9 +43,9 @@
           </a>
 
           <div class="navbar-dropdown is-right">
-            <a v-if="!userLoggedIn" @click="loginUser" class="navbar-item">
+            <router-link v-if="!userLoggedIn" :to="{ name: 'Login' }" exact class="navbar-item">
               Login
-            </a>
+            </router-link>
             <hr v-if="!userLoggedIn" class="navbar-divider">
             <a v-if="!userLoggedIn" @click="loginUser" class="navbar-item">
               Register
