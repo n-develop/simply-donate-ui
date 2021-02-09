@@ -26,6 +26,6 @@ export default {
 }
 .page {
   padding: 20px;
-  background-color: #2B677E;
+  background-color: #3298dc;
 }
 </style>
