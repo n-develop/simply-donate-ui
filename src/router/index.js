@@ -6,6 +6,7 @@ import HomePage from "@/views/HomePage";
 import LoginPage from "@/views/LoginPage";
 import DonationsList from "@/views/DonationsList";
 import NonProfitList from "@/views/NonProfitList";
+import CreateDonation from "@/views/CreateDonation";
 
 Vue.use(Router);
 
@@ -40,6 +41,11 @@ export default new Router ({
             path: '/login',
             name: 'Login',
             component: LoginPage,
-        }
+        },
+        {
+            path: '/create-donation',
+            name: 'CreateDonation',
+            component: CreateDonation,
+        },
     ],
 })
