@@ -1,6 +1,6 @@
 <template>
   <div id="donationsList" class="page columns is-multiline">
-    <div class="column is-one-quarter" v-for="(donation, index) in donations" :key="index">
+    <div class="column is-one-third-desktop is-half-tablet is-full-mobile" v-for="(donation, index) in donations" :key="index">
       <div class="card">
         <header class="card-header">
           <p class="card-header-title">
