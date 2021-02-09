@@ -24,9 +24,7 @@
           Wo kann ich spenden?
         </router-link>
 
-        <hr class="navbar-divider">
-
-        <router-link :to="{ name: 'Donations' }" active-class="is-primary" exact class="navbar-item">
+         <router-link :to="{ name: 'Donations' }" active-class="is-primary" exact class="navbar-item">
           Spenden anzeigen
         </router-link>
         <router-link :to="{ name: 'NonProfits' }" active-class="is-primary" exact class="navbar-item">
@@ -34,9 +32,6 @@
         </router-link>
       </div>
       <div class="navbar-end">
-        <router-link :to="{ name: 'Account' }" active-class="is-primary" exact class="navbar-item">
-        </router-link>
-
         <div class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link">
             <i class="fas fa-user"></i>
