@@ -52,6 +52,6 @@ export default {
 
 <style scoped>
 #login-screen {
-  background-color: #2B677E;
+  background-color: #3298dc;
 }
 </style>
